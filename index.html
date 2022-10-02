@@ -87,34 +87,70 @@
             </div>
         </section>
 
+
         <!---Contact--->
         <section class="contact" id="contact">
             <div class="max-width">
-                <form>
-                <h2 class="title">Send Me A Message.</h2>
-                <div class="msg-cont">
-                    <div class="urname">
-                        <div class="word">Enter Your Name:</div>
-                        <div class="text-area">
-                            <input type="text" id="user-name">
+
+                
+                <h2 class="title">Send Me A Message</h2>
+                <script type="module">
+                    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+                    import { getDatabase, set, ref } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-database.js";
+                
+                    const firebaseConfig = {
+                                      apiKey: "AIzaSyBZUcLc6qz5XI9wUs761_piF7V-WqfVS7Y",
+                                      authDomain: "projectasela.firebaseapp.com",
+                                      databaseURL: "https://projectasela-default-rtdb.asia-southeast1.firebasedatabase.app",
+                                      projectId: "projectasela",
+                                      storageBucket: "projectasela.appspot.com",
+                                      messagingSenderId: "200235328801",
+                                      appId: "1:200235328801:web:1311d56b07b35802854a60",
+                                      measurementId: "G-0G5GL914MS"
+                                    };
+                                  
+                  
+                    // Initialize Firebase
+                    const app = initializeApp(firebaseConfig);
+                    const db = getDatabase(app);
+                
+                    document.getElementById("userform").addEventListener("submit", function(e){
+                        e.preventDefault();
+                        let userId = document.getElementById("name").value;
+                        let  email= document.getElementById("mail").value;
+                        let usermsg = document.getElementById("msg").value;
+                        set(ref(db, 'users/' + userId), {
+                            email: email,
+                            usermsg : usermsg,
+                            
+                    });
+                });
+                
+                  </script>
+
+                <form method="post" id="userform">
+                    <div class="msg-cont">
+                        <div class="urname">
+                            <div class="word">Enter Your Name:</div>
+                            <div class="text-area">
+                                <input type="text" id="name">
+                            </div>
+                        
+                            <div class="word">Enter Your E-mail:</div>
+                            <div class="text-area">
+                                <input type="email" id="mail">
+                            </div>
+
+                            <div class="word">Put Your Message Here:</div>
+                            <div class="text-area">
+                                <input type="text"  id="msg" class="msg">
+                            </div>
                         </div>
-                    </div>
-                    <div class="urname">
-                        <div class="word">Enter Your E-mail:</div>
-                        <div class="text-area">
-                            <input type="email" id="user-mail">
+
+                        <div class="send-btn">
+                            <input type="submit" value="Send" id="submit">
                         </div>
-                    </div>
-                    <div class="urname">
-                        <div class="word">Put Your Message Here:</div>
-                        <div class="text-area">
-                            <input type="text" class="user-msg" id="user-msg">
-                        </div>
-                    </div>
-                    <div class="send-btn">
-                        <button type="submit" class="send">Send</button>
-                    </div>
-                </div> 
+                    </div> 
                 </form>          
             </div>
 
