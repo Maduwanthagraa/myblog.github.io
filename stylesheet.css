@@ -311,7 +311,7 @@ section .title::after{
     box-sizing: border-box;
 }
 
-.user-msg{
+.msg{
     width: 80%;
     height: 80px;
     padding:12px 20px;
@@ -324,7 +324,7 @@ section .title::after{
 }
 
 /*send button styling*/
-.send-btn button{
+.send-btn input{
     font-size: 23px;
     color: #fff;
     cursor: pointer;
