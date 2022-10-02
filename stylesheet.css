@@ -328,7 +328,7 @@ section .title::after{
     font-size: 23px;
     color: #fff;
     cursor: pointer;
-    background-color: #222;
+    background-color: rgb(130, 111, 238);
     margin: 10px 10px 10px 10px;
     padding: 10px 20px 10px 20px;
     border-radius: 10px;
