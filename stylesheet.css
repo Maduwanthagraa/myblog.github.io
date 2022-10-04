@@ -9,7 +9,7 @@
 }
 
 .max-width{
-    max-width: 1300px;
+   max-width: 100%;
     padding: 0 80px;
     margin: auto;
 }
@@ -104,7 +104,7 @@
 }
 
 .Home .home-content .text-2{
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 600;
     margin-left: -3px;
 }
@@ -283,56 +283,7 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 
-/*Contact section stylling*/
-.contact{
-    background-color:#fff;
-}
 
-.contact .msg-cont .word{
-    font-size: 28px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-    
-}
-.contact .title::after{
-    background:#fff;
-    content: "What I Provide";
-
-}
-
-.contact .msg-cont .text-area input{
-    width: 80%;
-    padding: 12px 20px;
-    font-size: large;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid rgb(51, 48, 48);
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-.msg{
-    width: 80%;
-    height: 80px;
-    padding:12px 20px;
-    font-size: large;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid rgb(51, 48, 48);
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-/*send button styling*/
-.send-btn input{
-    font-size: 23px;
-    color: #fff;
-    cursor: pointer;
-    background-color: rgb(130, 111, 238);
-    margin: 10px 10px 10px 10px;
-    padding: 10px 20px 10px 20px;
-    border-radius: 10px;
-}
 
 
 
