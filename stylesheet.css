@@ -8,6 +8,10 @@
     text-decoration: none;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .max-width{
    max-width: 100%;
     padding: 0 80px;
@@ -82,6 +86,31 @@
     display: none;
 }
 
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: crimson;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+
+}
+
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
 /*Home section Styling*/
 
 .Home{
@@ -115,7 +144,7 @@
 }
 
 .Home .home-content .text-3 span{
-   color: crimson;
+   color: rgb(255, 0, 51);
    font-weight: 500;
 }
 
@@ -136,7 +165,7 @@
     background: none;
 }
 /*Smilar Content*/
-.about, .services, .skills{
+.about, .services, .skills,.team,.contact {
     font-family: 'poppins',sans-serif;
 }
 
@@ -145,7 +174,7 @@ section{
 }
 
 .about .about-content,
-.services .serv-content,.skills-content{
+.services .serv-content,.skills-content,.contact.contact-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -240,7 +269,7 @@ section .title::after{
     background: none;
 }
 /*service stylling*/
-.services{
+.services,.team{
     color: #fff;
     background: #111;
 }
@@ -373,11 +402,283 @@ section .title::after{
 }
 
 
+/*Team styling*/
+
+
+.team .title::after{
+    content: "Who with me";
+}
+
+.team .carousel .card {
+    background: rgb(70, 69, 69);
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+    
+    
+}
+
+.team .carousel .card:hover {
+    background: crimson;
+}
 
 
 
 
+.team .carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    
+}
 
+.team .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+
+
+
+
+.team .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+
+
+.team .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border:5px solid crimson;
+    transition: all 0.3s ease;
+}
+
+.team .carousel .card :hover img{
+    border: #fff 5px solid;
+    border-radius: 50%;
+}
+
+
+.team .title::before{
+    background:#fff;
+
+}
+.team .title::after{
+    background:#111;
+    
+
+}
+
+.owl-dots{
+    text-align: center;
+    margin-top:20px ;
+}
+
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none! important;
+    border-radius: 50%;
+    border: 2px solid crimson! important;
+    transition: all o.3s ease;
+}
+
+.owl-dot.active{
+    width: 35px;
+    border-radius: 15px;
+}
+
+
+.owl-dot.active,
+.owl-dot:hover{
+    background: crimson!important;
+}
+
+
+/*Contact Styling*/
+
+.contact .title::after{
+    content: "Get In Touch";
+}
+
+.contact.contact-content.column{
+    width: calc(50%-30px);
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+    text-align: justify;
+
+}
+
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: crimson;
+}
+
+.contact .contact-content  .info .head{
+    font-weight: 500;
+
+}
+
+.contact .contact-content .row .info .sub-title{
+    color: #333;
+}
+
+
+
+.contact .right form .field,
+.contact .right form .fields.field{
+    height: 45px;
+    width: 60%;
+    margin-bottom: 10px;
+}
+
+
+
+
+.contact .right form .field input{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    outline: none;
+    padding:0 15px;
+    font-size: 17px;
+   font-family: 'poppins',sans-serif;
+}
+
+.fieldvar{
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.submit{
+    padding: 10px;
+    background: crimson;
+    font-size: 20px;
+    color: #fff;
+    font-family: 'poppins',sans-serif;
+    border: #333 5px solid;
+    border-radius: 10px;
+}
+
+.submit:hover{
+    background: #fff;
+    color: crimson;
+    border: crimson 5px solid;
+}
+
+
+
+/*footer styling*/
+
+
+.foot{
+    height: 80px;
+    width: 100%;
+    background: #333;
+    
+    display: flex;
+    
+}
+.fa-facebook:hover{
+    opacity: 0.7;
+}
+
+
+.fa-youtube:hover{
+    opacity: 0.7;
+}
+
+
+.fa-linkedin:hover{
+    opacity: 0.7;
+}
+
+
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius:10px;
+  
+  
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius:10px;
+}
+
+
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius:10px;
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius:10px;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius:10px;
+}
 
 
 
