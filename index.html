@@ -7,18 +7,25 @@
         <link rel="stylesheet" href="stylesheet.css">
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script src="s2.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" ></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
+        <div class="scroll-up-btn">
+            <i class="fas fa-angle-up"></i>
+        </div>
         <nav class="navbar">
             <div class="max-width">
                 <div class="logo"><a href="#">Asela<span>Maduwantha</span></a></div>
                 <ul class="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Contact </a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact </a></li>
                 </ul>
                 <div class="menu-btn">
                     <i class="fas fa-bars"></i>
@@ -31,7 +38,7 @@
                 <div class="home-content">
                     <div class="text-1">Hello,I'm Asela</div>
                     <div class="text-2">Maduwantha</div>
-                    <div class="text-3">And I'm a<span>Developer</span></div>
+                    <div class="text-3">And I'm a<span> Developer</span></div>
                     <a href="#">Hire Me</a>
                 </div>
             </div>
@@ -126,6 +133,169 @@
                 </div>
             </div>
         </section>
+
+        <!--Team start-->
+        <section class="team" id="team">
+            <div class="max-width">
+                <h2 class="title">My Team</h2>
+                <div class="carousel owl-carousel">
+                    <div class="card">
+                        <div class="box">
+                            <img src="manuka.jpg">
+                            <div class="text">Manuka Nipun</div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, fugiat?</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img src="kalindu.jpg">
+                            <div class="text">Dushan Kalindu</div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, fugiat?</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img src="sasanka.jpg">
+                            <div class="text">Sasanka Nirmal</div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, fugiat?</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img src="prasanna.jpg">
+                            <div class="text">Prasanna Allepola</div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, fugiat?</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img src="yohan.jpg">
+                            <div class="text">Yohan Isuru</div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, fugiat?</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img src="akila.jpg">
+                            <div class="text">Akila Sanjeewa</div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, fugiat?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Contact Section Start-->
+        <section class="contact" id="contact">
+            <div class="max-width">
+                <h2 class="title">Contact Me</h2>
+                <div class="contact-content">
+                    <div class="column left">
+                        <div class="text">Come to my place</div>
+                        <p>Lorem ipsum dolor sit</p>
+                        <div class="icons">
+                            <div class="row">
+                                <i class="fas fa-user"></i>
+                                <div class="info">
+                                    <div class="head">Name</div>
+                                    <div class="sub-title">Asela Maduwantha</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icons">
+                            <div class="row">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="info">
+                                    <div class="head">Address</div>
+                                    <div class="sub-title">No.01,Wellawaya</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="icons">
+                            <div class="row">
+                                <i class="fas fa-envelope"></i>
+                                <div class="info">
+                                    <div class="head">E-mail</div>
+                                    <div class="sub-title">maduwanthagraa.21@uom.lk</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="column right">
+                        <div class="text">Send Me A Message</div>
+                        <script type="module">
+                            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+                            import { getDatabase, set, ref } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-database.js";
+                        
+                            const firebaseConfig = {
+                                              apiKey: "AIzaSyBZUcLc6qz5XI9wUs761_piF7V-WqfVS7Y",
+                                              authDomain: "projectasela.firebaseapp.com",
+                                              databaseURL: "https://projectasela-default-rtdb.asia-southeast1.firebasedatabase.app",
+                                              projectId: "projectasela",
+                                              storageBucket: "projectasela.appspot.com",
+                                              messagingSenderId: "200235328801",
+                                              appId: "1:200235328801:web:1311d56b07b35802854a60",
+                                              measurementId: "G-0G5GL914MS"
+                                            };
+                                          
+                          
+                            // Initialize Firebase
+                            const app = initializeApp(firebaseConfig);
+                            const db = getDatabase(app);
+                        
+                            document.getElementById("client msg").addEventListener("submit", function(e){
+                                e.preventDefault();
+                                let userId = document.getElementById("name").value;
+                                let email = document.getElementById("email").value;
+                                let subject = document.getElementById("subject").value;
+                                let msg = document.getElementById("msg").value;
+                                set(ref(db, 'users/' + userId), {
+                                   
+                                    email: email,
+                                    subject: subject,
+                                    msg: msg,
+                            });
+                        });
+                        
+                          </script>
+                        
+                        <form method="post" class="client msg" id="client msg">
+                            <div class="fields">
+                                <div class="field name">
+                                    <div class="fieldvar">Name:</div>
+                                    <input type="text" id="name" class="name" placeholder="Perera A.B.C."required>
+                                </div><br>
+                                <div class="field mail">
+                                    <div class="fieldvar">Your E-mail:</div>
+                                    <input type="email" id="email" class="email" placeholder="abc@gmail.com" required>
+                                </div><br>
+                                
+                                <div class="field subject">
+                                    <div class="fieldvar">Subject:</div>
+                                    <input type="text" id="subject" class="subject" placeholder="Subject" required>
+                                </div><br>
+                                    
+                                <div class="field msg">
+                                    <div class="fieldvar">Your Message:</div>
+                                    <input type="text" id="msg" class="smsg" placeholder="Your message" required>
+                                </div><br><br>
+                            </div>
+                            <div class="send-btn">
+                                <button type="submit" id="submit" class="submit">Send message</button>
+                            </div>
+                        </form>
+                    </div>
+            </div>
+                
+            </div>
+        </section>
+
+        <footer class="foot">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-youtube"></a>
+        </footer>
 
 
      
