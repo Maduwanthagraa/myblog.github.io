@@ -1,9 +1,9 @@
-body{
-    padding: 100px;
-    border: rgb(29, 29, 29) 3px solid;
+
+.maind{
+    
+    margin: 0 20% 0 20% ;
+    padding: 5%;
 }
-
-
 
 
 .main h3,h2{
@@ -16,7 +16,7 @@ td{
 th img{
     height: 150px;
     width: 150px;
-    padding-left: 500%;
+   
     
 }
 
