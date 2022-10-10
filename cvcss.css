@@ -1,0 +1,39 @@
+body{
+    padding: 100px;
+    border: rgb(29, 29, 29) 3px solid;
+}
+
+
+
+
+.main h3,h2{
+    text-align: left;
+}
+
+td{
+    padding: 10px;
+}
+th img{
+    height: 150px;
+    width: 150px;
+    padding-left: 500%;
+    
+}
+
+.personal p{
+    font-weight: 1000;
+}
+
+.tabhead{
+    font-weight: bold;
+}
+
+.descrip{
+    font-weight: 1000
+    ;
+}
+
+.head{
+    font-weight: 1000;
+}
+

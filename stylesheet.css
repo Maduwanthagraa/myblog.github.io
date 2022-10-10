@@ -29,7 +29,7 @@ html{
 }
 
 .navbar.sticky{
-     background: crimson;
+     background: rgb(53, 52, 52);
      padding: 15px 0;
 }
 
@@ -72,6 +72,7 @@ html{
 
 .navbar .menu li a:hover{
     color: crimson;
+   
 
 }
 .navbar.sticky .menu li a:hover{
@@ -383,6 +384,17 @@ section .title::after{
 
 }
 
+.skills-content .right .php::before{
+    width: 50%;
+
+}
+
+.skills-content .right .C::before{
+    width: 75%;
+
+}
+
+
 .skills-content .left a{
     display: inline-block;
     background: crimson;
@@ -508,6 +520,7 @@ section .title::after{
     content: "Get In Touch";
 }
 
+
 .contact.contact-content.column{
     width: calc(50%-30px);
 }
@@ -578,109 +591,51 @@ section .title::after{
 }
 
 .submit{
-    padding: 10px;
+    padding: 8px;
     background: crimson;
-    font-size: 20px;
+    font-size: 17px;
     color: #fff;
     font-family: 'poppins',sans-serif;
-    border: #333 5px solid;
+    border: #333 2px solid;
     border-radius: 10px;
 }
 
 .submit:hover{
     background: #fff;
     color: crimson;
-    border: crimson 5px solid;
+    border: crimson 2px solid;
+    cursor:pointer;
 }
 
 
 
 /*footer styling*/
 
-
-.foot{
-    height: 80px;
+.footer{
+    height: 100px;
     width: 100%;
     background: #333;
-    
     display: flex;
+    justify-items: center;
+    padding-left: 35%;
+    padding-right: 20%;
+    padding-top: 10px;
+
     
 }
-.fa-facebook:hover{
-    opacity: 0.7;
-}
-
-
-.fa-youtube:hover{
-    opacity: 0.7;
-}
-
-
-.fa-linkedin:hover{
-    opacity: 0.7;
-}
-
-
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius:10px;
   
-  
+.footer a img{
+    height: 50px;
+    width: auto;
+    margin: 10px;
+   
+    transition: all 0.3s ease;
+    
 }
 
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius:10px;
+.footer a img:hover{
+    transform: scale(1.05);
 }
-
-
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius:10px;
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius:10px;
-}
-
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius:10px;
-}
-
-
 
 
 
